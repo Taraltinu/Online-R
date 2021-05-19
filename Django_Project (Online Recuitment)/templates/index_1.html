@@ -1,0 +1,1148 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+    <!-- Header Wrapper End -->
+    <!-- CC slider Wrapper Start -->
+    <div class="cc_slider_main_wrapper">
+        <div class="cc_slider_img_section">
+            <div class="owl-carousel owl-theme">
+                <div class="item cc_main_slide1">
+                    <div class="cc_slider_overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <div class="cc_slider_cont1_wrapper">
+                                    <div class="cc_slider_cont1">
+                                        <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">We Offer <span>30,000+</span><br> Job Vacancies Right Now!</h2>
+                                        <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">Find Jobs, Employment & Career Opportunities</h1>
+                                        <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum<br> auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet<br> nibh vulputate cursus a sit
+                                            amet mauris. Morbi accumsan</p>
+                                        <ul>
+                                            <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#"><i class="fa fa-plus-circle"></i> GET STARTED</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <form action="/company_list/" method="POST">
+                                    {% csrf_token %}
+                                <div class="jp_slider_form_main_wrapper" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+                                    <div class="jp_main_slider_heading_wrapper">
+                                        <h2>Find Your Job!</h2>
+                                    </div>
+                                    <div class="jp_slider_form_input">
+                                        <input type="text" placeholder="Keyword e.g. (Job Title, Description, Tags)">
+                                    </div>
+                                     <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i>
+                                        <select name="location">
+                                                <option >Location</option>
+
+                                                <option value="Ahemedabad">Ahemedabad</option>
+                                                <option value="Rajkot">Rajkot</option>
+                                                <option value="Surat">Surat</option>
+                                                <option value="Gandhinagar">Gandhinagar</option>
+                                                <option value="Baroda">Baroda</option>
+                                            </select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i>
+                                        <select name="category">
+                                                <option>Job Category</option>
+
+                                                <option value="IT Jobs">IT Jobs</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="HR">HR</option>
+                                                <option value="Digital Marketing">Digital Marketing</option>
+                                                <option value="Government">Government</option>
+                                            </select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i>
+                                        <select name="Experience">
+                                                <option>Experience</option>
+
+                                                <option value="1 Years">1 Years</option>
+                                                <option value="2 Years">2 years</option>
+                                                <option value="3 Years">3 years</option>
+                                                <option value="4 Years">4 years</option>
+                                                <option value="5 Years">5 years</option>
+                                            </select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i>
+                                        <select name="salary">
+                                                <option>Salary</option>
+
+                                                <option value="10k">10k</option>
+                                                <option value="20k">20k</option>
+                                                <option value="30k">30k</option>
+                                                <option value="40k">40k</option>
+                                                <option value="50k">50k up</option>
+                                            </select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_btn_wrapper">
+                                        <ul>
+                                            <li><button class="btn btn-info btn-lg btn-block"><i class="fa fa-search"></i>&nbsp; SEARCH</button></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item cc_main_slide2">
+                    <div class="cc_slider_overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <div class="cc_slider_cont1_wrapper">
+                                    <div class="cc_slider_cont1">
+                                        <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">We Offer <span>30,000+</span><br> Job Vacancies Right Now!</h2>
+                                        <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">Find Jobs, Employment & Career Opportunities</h1>
+                                        <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum<br> auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet<br> nibh vulputate cursus a sit
+                                            amet mauris. Morbi accumsan</p>
+                                        <ul>
+                                            <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#"><i class="fa fa-plus-circle"></i> GET STARTED</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="jp_slider_form_main_wrapper" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+                                    <div class="jp_main_slider_heading_wrapper">
+                                        <h2>Find Your Job!</h2>
+                                    </div>
+                                    <div class="jp_slider_form_input">
+                                        <input type="text" placeholder="Keyword e.g. (Job Title, Description, Tags)">
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>Ahemedabad</option>
+                                                <option>Rajkot</option>
+                                                <option>Surat</option>
+                                                <option>Gandhinagar</option>
+                                                <option>Baroda</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+											    <option>IT Jobs</option>
+                                                <option>Marketing</option>
+                                                <option>HR</option>
+                                                <option>Digital Marketing</option>
+                                                <option>Government</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>1 Years</option>
+                                                <option>2 years</option>
+                                                <option>3 years</option>
+                                                <option>4 years</option>
+                                                <option>5 years</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>10k</option>
+                                                <option>20k</option>
+                                                <option>30k</option>
+                                                <option>40k</option>
+                                                <option>50k up</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_btn_wrapper">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-search"></i>&nbsp; SEARCH</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item cc_main_slide3">
+                    <div class="cc_slider_overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <div class="cc_slider_cont1_wrapper">
+                                    <div class="cc_slider_cont1">
+                                        <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">We Offer <span>30,000+</span><br> Job Vacancies Right Now!</h2>
+                                        <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">Find Jobs, Employment & Career Opportunities</h1>
+                                        <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum<br> auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet<br> nibh vulputate cursus a sit
+                                            amet mauris. Morbi accumsan</p>
+                                        <ul>
+                                            <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#"><i class="fa fa-plus-circle"></i> GET STARTED</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="jp_slider_form_main_wrapper" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+                                    <div class="jp_main_slider_heading_wrapper">
+                                        <h2>Find Your Job!</h2>
+                                    </div>
+                                    <div class="jp_slider_form_input">
+                                        <input type="text" placeholder="Keyword e.g. (Job Title, Description, Tags)">
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>Ahemedabad</option>
+												<option>Rajkot</option>
+												<option>Surat</option>
+												<option>Gandhinagar</option>
+												<option>Baroda</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>IT Jobs</option>
+												<option>Marketing</option>
+												<option>HR</option>
+												<option>Digital Marketing</option>
+												<option>Government</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>1 Years</option>
+												<option>2 years</option>
+												<option>3 years</option>
+												<option>4 years</option>
+												<option>5 years</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_location_wrapper">
+                                        <i class="fa fa-dot-circle-o first_icon"></i><select>
+												<option>10k</option>
+												<option>20k</option>
+												<option>30k</option>
+												<option>40k</option>
+												<option>50k up</option>
+											</select><i class="fa fa-angle-down second_icon"></i>
+                                    </div>
+                                    <div class="jp_slider_form_btn_wrapper">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-search"></i>&nbsp; SEARCH</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CC slider Wrapper End -->
+    <!-- jp popular Categories Wrapper Start -->
+    <div class="jp_popular_category_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_popu_cate_heading_wrapper">
+                        <h4>Popular Categories</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper_second">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-code"></i>
+                                <h3><a href="#">Developer</a></h3>
+                                <p>(240 jobs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper_second">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-laptop"></i>
+                                <h3><a href="#">Technology</a></h3>
+                                <p>(504 jobs))</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper_second">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-bar-chart"></i>
+                                <h3><a href="#">Accounting</a></h3>
+                                <p>(2250 jobs))</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper_second">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-medkit"></i>
+                                <h3><a href="#">Medical</a></h3>
+                                <p>(202 jobs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper2">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-university"></i>
+                                <h3><a href="#">Government</a></h3>
+                                <p>(1457 jobs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper2">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-newspaper-o"></i>
+                                <h3><a href="#">Media & News</a></h3>
+                                <p>(2142 jobs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper2">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-cutlery"></i>
+                                <h3><a href="#">Restaurants</a></h3>
+                                <p>(2342 jobs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper2">
+                        <div class="jp_top_jobs_category_wrapper">
+                            <div class="jp_top_jobs_category">
+                                <i class="fa fa-th-large"></i>
+                                <h3><a href="#">All Jobs</a></h3>
+                                <p>(2000+ jobs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp popular Categories Wrapper End -->
+    <!-- jp recent jobs Wrapper Start -->
+    <div class="jp_recent_job_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="cc_featured_product_main_wrapper">
+                        <div class="jp_hiring_heading_wrapper jp_job_post_heading_wrapper">
+                            <h2>Recent Jobs</h2>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#best" aria-controls="best" role="tab" data-toggle="tab">Featured</a></li>
+                            <li  id="remote"><a href="#hot" class="remotely" aria-controls="hot" role="tab" data-toggle="tab">Remotely</a></li>
+                            <li role="presentation" data-catid="Remotely"><a href="#trand" aria-controls="trand" role="tab" data-toggle="tab" >Part Time</a></li>
+                            <li role="presentation"><a href="#best" aria-controls="best" role="tab" data-toggle="tab">Full Time </a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="best">
+                            <div class="ss_featured_products">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item" data-hash="zero">
+                                        <div class="row">
+                                            {% for j in recent_job %}
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="jp_job_post_main_wrapper_cont">
+                                                    <div class="jp_job_post_main_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                <div class="jp_job_post_side_img">
+                                                                     {% if j.job_post_file %}
+                                                                    <img src="{{j.job_post_file.url}}" alt="post_img" />
+                                                                    }
+                                                                    {% endif %}
+                                                                </div>
+                                                                <div class="jp_job_post_right_cont">
+                                                                    <h4>{{j.job_title}} Exp:&nbsp;({{j.ex_p}})</h4>
+                                                                    <p>{{j.campany.company_name}}</p>
+                                                                    <ul>
+                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; &#8377;{{j.min_salary}}K - {{j.max_salary}}k P.M.</li>
+                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;{{j.location}}</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                <div class="jp_job_post_right_btn_wrapper">
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                                                                        <li><a href="#">{{j.job_type.name}}</a></li>
+                                                                        <li><a href="{% url 'apply' %}?job_id={{j.id}}">Apply</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp_job_post_keyword_wrapper">
+                                                        <ul>
+                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
+                                                            <li><a href="#">ui designer,</a></li>
+                                                            <li><a href="#">developer,</a></li>
+                                                            <li><a href="#">senior</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="item" data-hash="one">
+                                        <div class="row">
+                                            {% for j in recent_job %}
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="jp_job_post_main_wrapper_cont">
+                                                    <div class="jp_job_post_main_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                <div class="jp_job_post_side_img">
+                                                                    {% if j.job_post_file %}
+                                                                    <img src="{{j.job_post_file.url}}" alt="post_img" />
+                                                                    }
+                                                                    {% endif %}
+                                                                </div>
+                                                                <div class="jp_job_post_right_cont">
+                                                                    <h4>{{j.job_title}} Exp:&nbsp;({{j.ex_p}})</h4>
+                                                                    <p>{{j.campany.company_name}}</p>
+                                                                    <ul>
+                                                                         <li><i class="fa fa-cc-paypal"></i>&nbsp; &#8377;{{j.min_salary}}K - {{j.max_salary}}k P.M.</li>
+                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;{{j.location}}</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                <div class="jp_job_post_right_btn_wrapper">
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                                                                        <li><a href="#">{{j.job_type.name}}</a></li>
+                                                                        <li><a href="{% url 'apply' %}?job_id={{j.id}}">Apply</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp_job_post_keyword_wrapper">
+                                                        <ul>
+                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
+                                                            <li><a href="#">ui designer,</a></li>
+                                                            <li><a href="#">developer,</a></li>
+                                                            <li><a href="#">senior</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                         
+                                        </div>
+
+                                    </div>
+                                    <div class="item" data-hash="two">
+                                        <div class="row" id="kkkk">
+                                                {% for j in recent_job %}
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="jp_job_post_main_wrapper_cont">
+                                                    <div class="jp_job_post_main_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                <div class="jp_job_post_side_img">
+                                                                    {% if j.job_post_file %}
+                                                                    <img src="{{j.job_post_file.url}}" alt="post_img" />
+                                                                    }
+                                                                    {% endif %}
+                                                                </div>
+                                                                <div class="jp_job_post_right_cont">
+                                                                    <h4>{{j.job_title}} Exp:&nbsp;({{j.ex_p}})</h4>
+                                                                    <p>{{j.campany.company_name}}</p>
+                                                                    <ul>
+                                                                         <li><i class="fa fa-cc-paypal"></i>&nbsp; &#8377;{{j.min_salary}}K - {{j.max_salary}}k P.M.</li>
+                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;{{j.location}}</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                <div class="jp_job_post_right_btn_wrapper">
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                                                                        <li><a href="#">{{j.job_type.name}}</a></li>
+                                                                        <li><a href="{% url 'apply' %}?job_id={{j.id}}">Apply</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp_job_post_keyword_wrapper">
+                                                        <ul>
+                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
+                                                            <li><a href="#">ui designer,</a></li>
+                                                            <li><a href="#">developer,</a></li>
+                                                            <li><a href="#">senior</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_nav_img_wrapper">
+                                <div class="video_nav_img">
+                                    <ul>
+                                        <li><a class="button secondary url owl_nav" href="#zero">1</a></li>
+                                        <li><a class="button secondary url owl_nav" href="#one">2</a></li>
+                                        <li><a class="button secondary url owl_nav active" href="#two">3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp recent jobs Wrapper End -->
+    <!-- jp Hiring company Wrapper Start -->
+    <div class="jp_hiring_com_slider_main_wrapper">
+        <div class="jp_hiring_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_hiring_slider_main_wrapper">
+                        <div class="jp_hiring_slider_heading_wrapper">
+                            <h2>Top Hiring Companies</h2>
+                        </div>
+                        <div class="jp_hiring_slider_wrapper">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="row">
+                                        {% for c in top_company %}
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="jp_hiring_content_main_wrapper">
+                                                <div class="jp_hiring_content_wrapper">
+                                                    {% if c.campany_logo %}
+                                                    <img src="{{c.campany_logo.url}}" alt="hiring_img" />
+                                                    {% else %}
+                                                    <img src="{% static 'images/header/logo.png' %}" alt="hiring_img" />
+                                                    {% endif %}
+                                                    <h4>{{c.company_name}}</h4>
+                                                    <p>({{c.location}})</p>
+                                                    <ul>
+                                                        <li><a href="#kkkk" style="margin-left: 80px;">{{recent_job|length}} &nbsp;Opening</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        {% for c in top_company %}
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="jp_hiring_content_main_wrapper">
+                                                <div class="jp_hiring_content_wrapper">
+                                                    {% if c.campany_logo %}
+                                                    <img src="{{c.campany_logo.url}}" alt="hiring_img" />
+                                                    {% else %}
+                                                    <img src="{% static 'images/header/logo.png' %}" alt="hiring_img" />
+                                                    {% endif %}
+                                                    <h4>{{c.company_name}}</h4>
+                                                    <p>({{c.location}})</p>
+                                                    <ul>
+                                                        <li><a href="#kkkk" style="margin-left: 80px;">{{recent_job|length}} &nbsp;Opening</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp Hiring company Wrapper End -->
+    <!-- jp pricing Wrapper Start -->
+    <!-- <div class="jp_pricing_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_pricing_sec_main_heading">
+                        <div class="jp_pricing_sec_heading">
+                            <h4>Pricing Plan</h4>
+                            <p>Default is 3 pack but you can add more if you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="pricing_box1_wrapper pricing_border_box1_wrapper">
+                        <div class="box1_heading_wrapper">
+                            <h4>Basic Plan</h4>
+                        </div>
+                        <div class="price_box1_wrapper">
+                            <div class="price_box1">
+                                <h1>$<span>29</span></h1>
+                            </div>
+                        </div>
+                        <div class="pricing_cont_wrapper">
+                            <div class="pricing_cont">
+                                <ul>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;5 Jobs Posting</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;2 Featured jobs</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;1 Renew Jobs</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;10 Days Duration</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;Email Alert</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing_btn_wrapper">
+                            <div class="pricing_btn1">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-plus-circle"></i> Get Started</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="jp_pricing_label_wrapper">
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="pricing_box1_wrapper pricing_border_box2_wrapper">
+                        <div class="box1_heading_wrapper box2_heading_wrapper">
+                            <h4>Premium Plan</h4>
+                        </div>
+                        <div class="price_box1_wrapper">
+                            <div class="price_box2">
+                                <h1>$<span>49</span></h1>
+                            </div>
+                        </div>
+                        <div class="pricing_cont_wrapper">
+                            <div class="pricing_cont">
+                                <ul>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;5 Jobs Posting</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;2 Featured jobs</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;1 Renew Jobs</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;10 Days Duration</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;Email Alert</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing_btn_wrapper">
+                            <div class="pricing_btn2">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-plus-circle"></i> Get Started</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="jp_pricing_label_wrapper">
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="pricing_box1_wrapper pricing_border_box3_wrapper">
+                        <div class="box1_heading_wrapper box3_heading_wrapper">
+                            <h4>Advanced Plan</h4>
+                        </div>
+                        <div class="price_box1_wrapper">
+                            <div class="price_box3">
+                                <h1>$<span>79</span></h1>
+                            </div>
+                        </div>
+                        <div class="pricing_cont_wrapper">
+                            <div class="pricing_cont">
+                                <ul>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;5 Jobs Posting</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;2 Featured jobs</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;1 Renew Jobs</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;10 Days Duration</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;Email Alert</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing_btn_wrapper">
+                            <div class="pricing_btn3">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-plus-circle"></i> Get Started</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="jp_pricing_label_wrapper">
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- jp pricing Wrapper End -->
+    <!-- jp ragister Wrapper Start -->
+    <div class="jp_register_section_main_wrapper">
+        <div class="jp_regis_left_side_box_wrapper">
+            <div class="jp_regis_left_side_box">
+                <img src="{% static 'images/content/regis_icon.png' %}" alt="icon" />
+                <h4>I’m an JOB SEEKER</h4>
+                <p>Signed in companies are able to post new<br> job offers, searching for candidate...</p>
+                <ul>
+                    <li><a href="/register/"><i class="fa fa-plus-circle"></i> &nbsp;REGISTER AS COMPANY</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="jp_regis_right_side_box_wrapper">
+            <div class="jp_regis_right_img_overlay"></div>
+            <div class="jp_regis_right_side_box">
+                <img src="{%  static 'images/content/regis_icon2.png' %}" alt="icon" />
+                <h4>I’m an HIRER</h4>
+                <p>Signed in companies are able to post new<br> job offers, searching for candidate...</p>
+                <ul>
+                    <li><a href="/register/"><i class="fa fa-plus-circle"></i> &nbsp;REGISTER AS COMPANY</a></li>
+                </ul>
+            </div>
+            <div class="jp_regis_center_tag_wrapper">
+                <p>OR</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- jp ragister Wrapper End -->
+    <!-- jp best deal Wrapper Start -->
+    <!-- <div class="jp_best_deal_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_best_deal_heading_wrapper">
+                        <div class="jp_best_deal_heading">
+                            <h4>Offering the best Deals</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="jp_best_deal_main_cont_wrapper">
+                        <div class="jp_best_deal_icon_sec">
+                            <i class="flaticon-magnifying-glass"></i>
+                        </div>
+                        <div class="jp_best_deal_cont_sec">
+                            <h4><a href="#">Search a Jobs</a></h4>
+                            <p>Proin gravida nibh Aenean sollicitudin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="jp_best_deal_main_cont_wrapper">
+                        <div class="jp_best_deal_icon_sec">
+                            <i class="flaticon-users"></i>
+                        </div>
+                        <div class="jp_best_deal_cont_sec">
+                            <h4><a href="#">Apply a Job</a></h4>
+                            <p>Proin gravida nibh Aenean sollicitudin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="jp_best_deal_main_cont_wrapper jp_best_deal_main_cont_wrapper2">
+                        <div class="jp_best_deal_icon_sec">
+                            <i class="flaticon-shield"></i>
+                        </div>
+                        <div class="jp_best_deal_cont_sec">
+                            <h4><a href="#">Job Security</a></h4>
+                            <p>Proin gravida nibh Aenean sollicitudin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="jp_best_deal_main_cont_wrapper jp_best_deal_main_cont_wrapper2">
+                        <div class="jp_best_deal_icon_sec">
+                            <i class="flaticon-notification"></i>
+                        </div>
+                        <div class="jp_best_deal_cont_sec">
+                            <h4><a href="#">Job Notifications</a></h4>
+                            <p>Proin gravida nibh Aenean sollicitudin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="jp_best_deal_main_cont_wrapper jp_best_deal_main_cont_wrapper2">
+                        <div class="jp_best_deal_icon_sec">
+                            <i class="flaticon-wallet"></i>
+                        </div>
+                        <div class="jp_best_deal_cont_sec">
+                            <h4><a href="#">Essay Pay Money</a></h4>
+                            <p>Proin gravida nibh Aenean sollicitudin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="jp_best_deal_main_cont_wrapper jp_best_deal_main_cont_wrapper2">
+                        <div class="jp_best_deal_icon_sec">
+                            <i class="flaticon-people"></i>
+                        </div>
+                        <div class="jp_best_deal_cont_sec">
+                            <h4><a href="#">Happy Support</a></h4>
+                            <p>Proin gravida nibh Aenean sollicitudin...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- jp best deal Wrapper End -->
+    <!-- jp career Wrapper Start -->
+    <!-- <div class="jp_career_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_hiring_slider_main_wrapper">
+                        <div class="jp_career_slider_heading_wrapper">
+                            <h2>Career advice</h2>
+                        </div>
+                        <div class="jp_career_slider_wrapper">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item jp_recent_main">
+                                    <div class="jp_career_main_box_wrapper">
+                                        <div class="jp_career_img_wrapper">
+                                            <img src="images/content/car_img1.jpg" alt="career_img" />
+                                        </div>
+                                        <div class="jp_career_cont_wrapper">
+                                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp; <a href="#">20 OCT, 2017</a></p>
+                                            <h3><a href="#">Hey Seeker, It’s Time</a></h3>
+                                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="jp_career_slider_bottom_cont">
+                                        <ul>
+                                            <li><img src="images/content/blog_small_img.jpg" alt="small_img" class="img-circle">&nbsp;&nbsp; <a href="#">Jhon Doe</a></li>
+                                        </ul>
+                                        <p><a href="#"><i class="fa fa-comments"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="item jp_recent_main">
+                                    <div class="jp_career_main_box_wrapper">
+                                        <div class="jp_career_img_wrapper">
+                                            <img src="images/content/car_img2.jpg" alt="career_img" />
+                                        </div>
+                                        <div class="jp_career_cont_wrapper">
+                                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp; <a href="#">20 OCT, 2017</a></p>
+                                            <h3><a href="#">Hey Seeker, It’s Time</a></h3>
+                                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="jp_career_slider_bottom_cont">
+                                        <ul>
+                                            <li><img src="images/content/blog_small_img.jpg" alt="small_img" class="img-circle">&nbsp;&nbsp; <a href="#">Jhon Doe</a></li>
+                                        </ul>
+                                        <p><a href="#"><i class="fa fa-comments"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="item jp_recent_main">
+                                    <div class="jp_career_main_box_wrapper">
+                                        <div class="jp_career_img_wrapper">
+                                            <img src="images/content/car_img3.jpg" alt="career_img" />
+                                        </div>
+                                        <div class="jp_career_cont_wrapper">
+                                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp; <a href="#">20 OCT, 2017</a></p>
+                                            <h3><a href="#">Hey Seeker, It’s Time</a></h3>
+                                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="jp_career_slider_bottom_cont">
+                                        <ul>
+                                            <li><img src="images/content/blog_small_img.jpg" alt="small_img" class="img-circle">&nbsp;&nbsp; <a href="#">Jhon Doe</a></li>
+                                        </ul>
+                                        <p><a href="#"><i class="fa fa-comments"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- jp career Wrapper End -->
+    <!-- jp counter Wrapper Start -->
+    <div class="jp_counter_main_wrapper">
+        <div class="gc_counter_cont_wrapper">
+            <div class="count-description">
+                <span class="timer">2540</span><i class="fa fa-plus"></i>
+                <h5 class="con1">Jobs Available</h5>
+            </div>
+        </div>
+        <div class="gc_counter_cont_wrapper2">
+            <div class="count-description">
+                <span class="timer">7325</span><i class="fa fa-plus"></i>
+                <h5 class="con2">Members</h5>
+            </div>
+        </div>
+        <div class="gc_counter_cont_wrapper3">
+            <div class="count-description">
+                <span class="timer">1924</span><i class="fa fa-plus"></i>
+                <h5 class="con3">Resumes</h5>
+            </div>
+        </div>
+        <div class="gc_counter_cont_wrapper4">
+            <div class="count-description">
+                <span class="timer">4275</span><i class="fa fa-plus"></i>
+                <h5 class="con4">Company</h5>
+            </div>
+        </div>
+    </div>
+    <!-- jp counter Wrapper End -->
+    <!-- jp recent resume Wrapper Start -->
+    <!-- <div class="jp_recent_resume_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_heading_wrapper">
+                        <div class="jp_recent_resume_heading">
+                            <h4>Offering the best Deals</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_box_wrapper">
+                        <div class="jp_recent_resume_img_wrapper">
+                            <img src="{% static 'images/content/resume_img1.jpg' %}" alt="resume_img" />
+                        </div>
+                        <div class="jp_recent_resume_cont_wrapper">
+                            <h3>Akshay Handge</h3>
+                            <p><i class="fa fa-folder-open-o"></i> <a href="#">UI Designer</a></p>
+                        </div>
+                        <div class="jp_recent_resume_btn_wrapper">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_box_wrapper">
+                        <div class="jp_recent_resume_img_wrapper">
+                            <img src="{%  static 'images/content/resume_img2.jpg' %}" alt="resume_img" />
+                        </div>
+                        <div class="jp_recent_resume_cont_wrapper">
+                            <h3>Ajay Suryavanshi</h3>
+                            <p><i class="fa fa-folder-open-o"></i> <a href="#">UI Designer</a></p>
+                        </div>
+                        <div class="jp_recent_resume_btn_wrapper">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_box_wrapper">
+                        <div class="jp_recent_resume_img_wrapper">
+                            <img src="{%  static 'images/content/resume_img3.jpg' %}" alt="resume_img" />
+                        </div>
+                        <div class="jp_recent_resume_cont_wrapper">
+                            <h3>Merry Foster</h3>
+                            <p><i class="fa fa-folder-open-o"></i> <a href="#">UI Designer</a></p>
+                        </div>
+                        <div class="jp_recent_resume_btn_wrapper">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_box_wrapper">
+                        <div class="jp_recent_resume_img_wrapper">
+                            <img src="{%   static 'images/content/resume_img4.jpg' %}" alt="resume_img" />
+                        </div>
+                        <div class="jp_recent_resume_cont_wrapper">
+                            <h3>Dashrath Singh</h3>
+                            <p><i class="fa fa-folder-open-o"></i> <a href="#">UI Designer</a></p>
+                        </div>
+                        <div class="jp_recent_resume_btn_wrapper">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_box_wrapper">
+                        <div class="jp_recent_resume_img_wrapper">
+                            <img src="{% static 'images/content/resume_img5.jpg' %}" alt="resume_img" />
+                        </div>
+                        <div class="jp_recent_resume_cont_wrapper">
+                            <h3>Jhon Doe</h3>
+                            <p><i class="fa fa-folder-open-o"></i> <a href="#">UI Designer</a></p>
+                        </div>
+                        <div class="jp_recent_resume_btn_wrapper">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_box_wrapper">
+                        <div class="jp_recent_resume_img_wrapper">
+                            <img src="{%   static 'images/content/resume_img6.jpg' %}" alt="resume_img" />
+                        </div>
+                        <div class="jp_recent_resume_cont_wrapper">
+                            <h3>Meera Thomas</h3>
+                            <p><i class="fa fa-folder-open-o"></i> <a href="#">UI Designer</a></p>
+                        </div>
+                        <div class="jp_recent_resume_btn_wrapper">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_recent_resume_view_btn_wrapper">
+                        <div class="jp_recent_resume_view_btn">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;VIEW ALL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- jp recent resume Wrapper End -->
+    <!-- jp testi slider Wrapper Start -->
+    <div class="jp_testi_slider_main_wrapper">
+        <div class="jp_testi_slider_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_testi_slider_heading_wrapper">
+                        <div class="jp_testi_slider_heading">
+                            <h4>What Clients Say?</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_testi_slider_wrapper">
+                        <div class="owl-carousel owl-theme" id="ClientsSay">
+                            <div class="item">
+                                <img src="{% static 'images/content/client_slider_img.jpg' %}" alt="testi_img" />
+                                <div class="jp_testi_cont_wrapper">
+                                    <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
+                                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>&nbsp;&nbsp; ~ Jeniffer Doe &nbsp;&nbsp;<span>(Ui Designer)</span></h4>
+                                </div>
+
+                            </div>
+                           
+                            <div class="item">
+                                <img src="images/content/client_slider_img.jpg" alt="testi_img" />
+                                <div class="jp_testi_cont_wrapper">
+                                    <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
+                                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>&nbsp;&nbsp; ~ Jeniffer Doe &nbsp;&nbsp;<span>(Ui Designer)</span></h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/content/client_slider_img.jpg" alt="testi_img" />
+                                <div class="jp_testi_cont_wrapper">
+                                    <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
+                                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>&nbsp;&nbsp; ~ Jeniffer Doe &nbsp;&nbsp;<span>(Ui Designer)</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                 
+            </div>
+
+        </div>
+         <div class="jp_regis_right_side_box mt-5" style="margin-top: 80px;">
+                <ul>
+                    <li><a href=""><i class="fa fa-plus-circle"></i> &nbsp;ADD REVIEW</a></li>
+                </ul>
+        </div>
+    </div>
+    <!-- jp testi slider Wrapper End -->
+    <!-- jp client slider wrapper Start -->
+    <div class="jp_client_slider_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_client_second_slider_wrapper">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="{% static 'images/content/p1.jpg' %}" alt="client_img">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/content/p2.jpg' %}" alt="client_img">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/content/p3.jpg' %}" alt="client_img">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/content/p4.jpg' %}" alt="client_img">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/content/p5.jpg' %}" alt="client_img">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/content/p6.jpg' %}" alt="client_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp client slider wrapper End -->
+    <!-- jp downlord Wrapper Start -->
+    <div class="jp_downlord_main_wrapper">
+    <div class="jp_downlord_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                    <div class="jp_down_mob_img_wrapper">
+                        <img src="{% static 'images/content/mobail.png' %}" alt="mobail_img" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="ss_download_wrapper_details">
+                        <h1><span>Download</span><br>Job Portal App Now!</h1>
+                        <p>Fast, Simple & Delightful. All it takes is 30 seconds to Download.</p>
+                        <a href="/page_not_found/" class="ss_appstore"><span><i class="fa fa-apple" aria-hidden="true"></i></span> App Store</a>
+                        <a href="/page_not_found/" class="ss_playstore"><span><i class="fa fa-android" aria-hidden="true"></i></span> Play Store</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 visible-sm visible-xs">
+                    <div class="jp_down_mob_img_wrapper">
+                        <img src="{% static 'images/content/mobail.png' %}" class="img-responsive" alt="mobail_img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   {% endblock %}

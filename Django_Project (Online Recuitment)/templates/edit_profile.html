@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+    <!-- jp Tittle Wrapper Start -->
+    <div class="jp_tittle_main_wrapper">
+        <div class="jp_tittle_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_tittle_heading_wrapper">
+                        <div class="jp_tittle_heading">
+                            <h2>Register</h2>
+                        </div>
+                        <div class="jp_tittle_breadcrumb_main_wrapper">
+                            <div class="jp_tittle_breadcrumb_wrapper">
+                                <ul>
+                                    <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                                    <li><a href="#">Pages</a> <i class="fa fa-angle-right"></i></li>
+                                    <li>Register</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp Tittle Wrapper End -->
+
+    <!-- jp register wrapper start -->
+    <div class="register_section">
+        <!-- register_form_wrapper -->
+        <div class="register_tab_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div role="tabpanel">
+
+                            <!-- Nav tabs -->
+                            <div class="text-center">
+                                {% include '_message.html' %}
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active register_left_form" id="contentOne-1">
+									
+                                    <div class="jp_regiter_top_heading">
+                                        <p>Fields with * are mandetory </p>
+                                    </div>
+                                    <div class="row">
+                                        <!-- job seeker Register form start -->
+                                        <form method="POST" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="web_site" value="" placeholder="Web Site*">
+                                        </div>
+
+                                        <!--Form Group-->
+                                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+                                            <input type="text" name="mother_name" value="" placeholder="Mother_name*">
+                                        </div>
+                                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+                                            <input type="text" name="father_name" value="" placeholder="father Name*">
+                                        </div>
+
+                                        <!--Form Group-->
+                                       
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+                                            <input type="text" name="location" value="" placeholder="current location">
+
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Date Of Birth</label>
+                                            <input type="text" name="bod" value="" placeholder="yyyy-mm-dd *">
+                                        </div>
+
+                                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+                                            <input type="text" name="phone" value="" placeholder="phone">
+                                        </div>
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12 custom_input">
+                                             <label>Resume</label>
+                                            <input type="file" name="resume">
+                                            <p>DOC, DOCX, RTF, PDF - 300KB MAX PREFERRED CV FORMAT - DOCX FILE</p>
+                                        </div>
+
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12 custom_input">
+                                            <label>Profile Pic</label>
+                                            <input type="file" name="profile">
+                                            <p>300KB MAX PREFERRED</p>
+                                        </div>
+                                        <!--Form Group-->
+                                       
+                                    </div>
+
+
+                                    <div class="login_btn_wrapper register_btn_wrapper login_wrapper ">
+                                        <button class="btn btn-primary btn-lg  login_btn text-uppercase  btn-block" style="background: #23c0e9;border: 1px solid #23c0e9;"> SAVE PROFILE</button>
+                                    </div>
+                                </form>
+                                </div>
+                                    <div class="login_message">
+                                        <p>Already a member? <a href="/JobSeeker_Profile/"> Go to Profile</a> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <p class="btm_txt_register_form">In case you are using a public/shared computer we recommend that you logout to prevent any un-authorized access to your account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp register wrapper end -->
+
+    {% endblock %}

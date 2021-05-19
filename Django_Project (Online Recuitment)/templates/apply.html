@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+    <!-- jp Tittle Wrapper Start -->
+    <div class="jp_tittle_main_wrapper">
+        <div class="jp_tittle_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_tittle_heading_wrapper">
+                        <div class="jp_tittle_heading">
+                            <h2>Apply-Post</h2>
+                        </div>
+                        <div class="jp_tittle_breadcrumb_main_wrapper">
+                            <div class="jp_tittle_breadcrumb_wrapper">
+                                <ul>
+                                    <li><a href="/">Home</a> <i class="fa fa-angle-right"></i></li>
+                                    <li>Apply-Post</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp Tittle Wrapper End -->
+
+    <!-- jp ad post Wrapper Start -->
+	<div class="jp_adp_main_section_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+							{% include '_message.html'  %}
+				</div>
+				<form method="POST">
+					{% csrf_token %}
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="jp_adp_form_heading_wrapper">
+						
+						<h2>Field Details</h2>
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<input type="hidden" name="job_id" value="{{job_id}}" placeholder="Full Name">
+
+						<input type="text" name="name" placeholder="Full Name">
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<select name="location">
+							<option value="Ahemdabad">--Current City--</option>
+
+							<option value="Ahemdabad">Ahemdabad</option>
+							<option value="Surat">Surat</option>
+							<option value="Rajkot">Rajkot</option>
+							<option value="munbai">munbai</option>
+							<option value="Chennai">Chennai</option>
+							<option value="Gandhinagar">Gandhinagar</option>
+							<option value="Bangloure">Bangloure</option>
+
+						</select>
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<input type="text" name="notice_period" placeholder="Notic Period (only for  Experienced)">
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<label>Email Address</label>
+
+						<input type="text" name="email" placeholder="Email Address*">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bottom_line_Wrapper">
+					<div class="jp_adp_form_heading_wrapper">
+						<p>Fields with * are mandetory</p>
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<input type="text" name="experience" placeholder="How Many years Experience (in year)">
+						
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<input type="text" name="job_skills" placeholder="Skills">
+					
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<select name="gander">
+							<option >--Gander--</option>
+
+							<option value="Ahemdabad">Male</option>
+							<option value="Surat">Female</option>
+							<option value="Rajkot">Other</option>
+							
+
+						</select>
+					</div>
+					<div class="jp_adp_form_wrapper">
+						<label>Date Of Birth</label>
+						<input type="date" name="dob" placeholder="Date Of Birth">
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="jp_adp_choose_resume">
+						<p>Latest resume</p>
+						<div class="custom-input">
+						  <span><i class="fa fa-upload"></i> &nbsp;Upload Resume</span>
+						  <input type="file" name="resume" id="resume" />
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="jp_adp_choose_resume_bottom_btn_post">
+						<ul>
+							<li><button type="submit" class="btn btn-danger btn-xg btn-block"> <i class="fa fa-plus"></i> Apply</button></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+    <!-- jp ad post Wrapper End -->
+   {% endblock base %}

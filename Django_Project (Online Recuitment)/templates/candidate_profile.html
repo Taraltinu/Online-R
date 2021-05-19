@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block base %}
+    <!-- Header Wrapper End -->
+	  <!-- jp Tittle Wrapper Start -->
+    <div class="jp_tittle_main_wrapper">
+        <div class="jp_tittle_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_tittle_heading_wrapper">
+                        <div class="jp_tittle_heading">
+                            <h2>candidate-Profile</h2>
+                        </div>
+                        <div class="jp_tittle_breadcrumb_main_wrapper">
+                            <div class="jp_tittle_breadcrumb_wrapper">
+                                <ul>
+                                    <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                                    <li><a href="#">Pages</a> <i class="fa fa-angle-right"></i></li>
+                                    <li>candidate-Profile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp Tittle Wrapper End -->
+    <!-- jp profile Wrapper Start -->
+	<div class="jp_cp_profile_main_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="jp_cp_left_side_wrapper">
+						<div class="jp_cp_left_pro_wallpaper">
+							<img src="{{data.profile.url}}" alt="profile_img">
+							<h2>Farhan Shaikh</h2>
+							<p>UI/UX Designer in Dewas</p>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+							</ul>
+						</div>
+						<div class="jp_cp_rd_wrapper">
+							<ul>
+
+								<li><a href="#"><i class="fa fa-download"></i> &nbsp;Download Resume</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> &nbsp;Contact candidate</a></li>
+							</ul>
+                            <ul>
+
+                                <li><a href="/edit_profile/"><i class="fa fa-edit"></i> &nbsp;Edit Profile</a></li>
+                            </ul>
+						</div>
+					</div>
+                    <div class="jp_add_resume_wrapper jp_job_location_wrapper jp_cp_left_ad_res">
+                        <div class="jp_add_resume_img_overlay"></div>
+                        <div class="jp_add_resume_cont">
+                            <img src="{% static 'images/content/resume_logo.png' %}" alt="logo" />
+                            <h4>Get Best Matched Jobs On your Email. Add Resume NOW!</h4>
+                            
+                            <ul>
+                                <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;ADD RESUME</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="/add_degree/"><i class="fa fa-plus-circle"></i> &nbsp;ADD DEGREE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<div class="jp_cp_right_side_wrapper">
+						<div class="jp_cp_right_side_inner_wrapper">
+							<h2>PERSONAL DETAILS</h2>
+							<table>
+                                <tbody>
+                                    <tr>
+                                        <td class="td-w25">Full Name</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65">{{data.first_name}}{{data.last_name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-w25">Father's Name</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65">{{profile_data.father_name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-w25">Address</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65">{{profile_data.location}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-w25">Zip Code</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65">12345</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-w25">Phone</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65">{{JobSeeker_profile.phone}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-w25">Email</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65">{{user}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-w25">Website</td>
+                                        <td class="td-w10">:</td>
+                                        <td class="td-w65"><a href="{{profile_data.web_site}}">{{profile_data.web_site}}</a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+							<div class="jp_cp_accor_heading_wrapper">
+								<h2>Education</h2>
+								<p>Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulpuate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.</p>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+							<div class="accordion_wrapper abt_page_2_wrapper">
+								<div class="panel-group" id="accordion_threeLeft">
+
+
+									<!-- /.panel-default -->
+									{% for d in degree %}
+									<div class="panel panel-default">
+										<div class="panel-heading bell">
+											<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion_threeLeft" href="#collapseTwentyLeftThree" aria-expanded="false">
+										{{d.degree}}
+									  </a>
+											</h4>
+										</div>
+										<div id="collapseTwentyLeftThree" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+											<div class="panel-body">
+												PERCENTAGE : &nbsp;<td>{{d.percentage}}%</td>
+											</div>
+                                            <div class="panel-body">
+                                                Name : &nbsp;<td>{{d.first}}</td>
+                                            </div>
+                                            <div class="panel-body">
+                                                University : &nbsp;<td>{{d.institute_name}}</td>  
+                                            </div>
+										</div>
+									</div>
+									{% endfor %}
+									
+								</div>
+								<!--end of /.panel-group-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- jp profile Wrapper End -->
+	{% endblock base %}

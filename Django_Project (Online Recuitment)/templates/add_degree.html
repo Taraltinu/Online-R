@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load socialaccount %}
+
+{% block base %}
+    <!-- Header Wrapper End -->
+	  <!-- jp Tittle Wrapper Start -->
+    <div class="jp_tittle_main_wrapper">
+        <div class="jp_tittle_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jp_tittle_heading_wrapper">
+                        <div class="jp_tittle_heading">
+                            <h2>QUALIFICATION</h2>
+                        </div>
+                        <div class="jp_tittle_breadcrumb_main_wrapper">
+                            <div class="jp_tittle_breadcrumb_wrapper">
+                                <ul>
+                                    <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                                    <li><a href="#">Pages</a> <i class="fa fa-angle-right"></i></li>
+                                    <li>QUALIFICATION</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jp Tittle Wrapper End -->
+	
+	<!-- jp login wrapper start -->
+	<div class="login_section">
+		<!-- login_form_wrapper -->
+		<div class="login_form_wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<!-- login_wrapper -->
+						<div class="text-center">
+                                {% include '_message.html' %}
+                            </div>
+						<h1>ADD YOUR QUALIFICATION</h1>
+						<div class="login_wrapper">
+							<form method="POST">
+								{% csrf_token %}
+							
+							<div class="formsix-pos">
+								<div class="form-group ">
+									<input type="text" class="form-control" name="degree" required="" id="email2" placeholder="QUALIFICATION*">
+								</div>
+							</div>
+							<div class="formsix-pos">
+								<div class="form-group ">
+									<input type="text" class="form-control" name="percentage" required="" id="password2" placeholder="PERCENTAGE *">
+								</div>
+							</div>
+							<div class="formsix-pos">
+								<div class="form-group">
+									<input type="text" class="form-control" name="institute_name" required="" id="password2" placeholder="INSTITUTE NAME *">
+								</div>
+							</div>
+							<div class="formsix-pos">
+								<div class="form-group">
+									<input type="text" class="form-control" name="start_date" required="" id="password2" placeholder="START DATE * (10/10/2020)">
+								</div>
+							</div>
+							<div class="formsix-pos">
+								<div class="form-group">
+									<input type="text" class="form-control" name="passing_year" required="" id="password2" placeholder="PASSING DATE *  (10/10/2022)">
+								</div>
+							</div>
+							<div class="login_remember_box">
+								<a href="/password-reset/" class="forget_password">
+									PROFILE >>
+								</a>
+							</div>
+							<div class="login_btn_wrapper">
+								<button type="submit" class="btn btn-primary btn-lg btn-block login_btn" style="background: #23c0e9;border: 1px solid #23c0e9;"> SAVE </button>
+							</div>
+						</form>
+						</div>
+						
+						<!-- /.login_wrapper-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.login_form_wrapper-->
+	</div>
+	<!-- jp login wrapper end -->
+{% endblock base %}
